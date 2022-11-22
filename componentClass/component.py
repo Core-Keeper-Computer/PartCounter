@@ -6,7 +6,7 @@ class Component(object):
         self.count = count
         self.items = items
 
-    def GetMaterialList(self) -> dict:
+    def __str__(self) -> str:
         materials = {}
         for i in range(self.count):
             for item in self.items:
@@ -17,4 +17,4 @@ class Component(object):
                                 materials[material.GetName()] = 1
                             else:
                                 materials[material.GetName()]+=1
-        return materials
+        return str(self.count) + " " + ComponentType(self.type).name + " brauchen: " + str(materials)
