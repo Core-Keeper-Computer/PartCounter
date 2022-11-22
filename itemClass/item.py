@@ -1,4 +1,4 @@
-from itemType import ItemType
+from itemClass.itemType import ItemType
 
 class Item(object):
     def __init__(self, type: ItemType, count: int, materials: list) -> None:

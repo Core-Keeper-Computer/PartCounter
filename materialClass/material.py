@@ -1,4 +1,4 @@
-from materialType import MaterialType
+from materialClass.materialType import MaterialType
 
 class Material(object):
     def __init__(self, type: MaterialType, count: int) -> None:
